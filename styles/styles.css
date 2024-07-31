@@ -14,6 +14,10 @@
 
  /*shared style  */
 
+ .bg-color{
+    background-color: rgb(0, 0, 0);
+    
+ }
  .display-flex{
     display: flex;
  }
@@ -30,8 +34,8 @@
 
  /* header section start here */
 
- .first-container{
-    max-width: 1440px;
+ .banner-container{
+    width: 1440px;
     height: 715px;
     border: 2px solid black;
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
@@ -64,7 +68,15 @@
     font-size: 1rem;
     color: rgb(255, 255, 255);
 }
-
+.bar-icon{
+    color: rgb(255, 255, 255);
+}
+.container-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 .section-container{
     width: 595px;
     height: 440px;
@@ -105,9 +117,8 @@
 }
 .img-section{
     position: absolute;
-    top: -13%;
+    top: -20%;
     left: 110%;
-    background: url(88);
 }
 .glass-section{
     position: relative;
@@ -180,4 +191,92 @@
     position: absolute;
     left: 15%;
     bottom: 20%;
+}
+@media screen and (max-width:576px){
+    .banner-container{
+        height: 1325px;
+        width: 576px;
+        margin: 70px 0px;
+    }
+    .navbar{
+        margin-left: 45px;
+    }
+    .nav-link{
+        display: none;
+    }
+    .bar-icon{
+        position: relative;
+       left: 100px;
+    }
+    .container-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .img-section{
+        width: 100%;
+       top: 529px;
+       left: 65px;
+    }
+   .section-container{
+    margin: 20px 45px;
+   }
+   .content-part{
+    margin-bottom: 10px;
+   }
+   .section-title{
+    width: 296px;
+    height: 76px;
+    margin: 20px 0px;
+   }
+   .glass-box{
+    left: 25px;
+    top: 785px;
+   }
+   .second-glass{
+    left: 250px;
+    top: -220px;
+   }
+}
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .banner-container{
+        width: 745px;
+        height: 1405px;
+    }
+    .navbar{
+        margin-left: 60px;
+    }
+    .section-container{
+        width: 599px;
+        height: 440px;
+        margin-left: 100px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .container-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .img-section{
+        width: 100%;
+       top: 529px;
+       left: 65px;
+    }
+    .glass-box{
+        left: 25px;
+        top: 830px;
+       }
+       .second-glass{
+        left: 250px;
+        top: -220px;
+       }
+       .bar-icon{
+        display: none;
+       }
+       .nav-links{
+       margin-left: 110px;
+       }
 }
