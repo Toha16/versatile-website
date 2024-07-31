@@ -8,19 +8,24 @@
   *{
     margin: 0px;
   }
+  html{
+    height: 100%;
+  }
+
  /*shared style  */
 
  .display-flex{
     display: flex;
  }
  .primary-color{
-    color: rgb(230, 83, 60);
+    color: rgb(255, 255, 255);
  }
  .btn-primary{
-    border-radius: 44px;
+    box-sizing: border-box;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 42px;
     background-color: rgb(230, 83, 60) ;
-    font-size: 1.2rem;
-    font-weight: 600;
  }
 
  /* header section start here */
@@ -28,22 +33,26 @@
  .first-container{
     max-width: 1440px;
     height: 715px;
-    border: 2px solid red;
+    border: 2px solid black;
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background-color: rgb(0, 0, 0);
  }
 
  /* Navbar related style */
 
- .fitness{
+ .fitness-section{
     font-size: 2.3rem;
     font-weight: 800;
+    color: rgb(230, 83, 60);
  }
  .navbar{
     justify-content: space-between;
-   margin: 55px 194px 190px;
+   margin: 55px 194px 30px 140px;
  }
  #home-part{
     padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
  }
 .nav-item{
     list-style: none;
@@ -52,6 +61,123 @@
 .nav-link{
     text-decoration: none;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: rgb(255, 255, 255);
+}
+
+.section-container{
+    width: 595px;
+    height: 440px;
+    margin: 90px 85px 75px 140px;
+    position: relative;
+}
+.content-part{
+    font-size: 4.8rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    padding-bottom: 28px;
+}
+#shape-part{
+    font-family: cursive;
+    font-size: 4.8rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+.section-title{
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 28px;
+}
+#join-part{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+.btn-section{
+    box-sizing: border-box;
+    padding: 16px 40px;
+    border-radius: 42px;
+    background-color: black;
+    border: 1px solid white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.img-section{
+    position: absolute;
+    top: -13%;
+    left: 110%;
+    background: url(88);
+}
+.glass-section{
+    position: relative;
+    height: 95px;
+    width: 200px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    background: rgba(48, 48, 48, 0.54);
+}
+.number-title{
+    position: absolute;
+    left: 40%;
+    bottom: 55%;
+}
+.video-title{
+    position: absolute;
+    left: 40%;
+    bottom: 30%;
+}
+.glass-section, h3{
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: rgb(250, 250, 249);
+}
+.glass-section, p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(239, 237, 232, 0.65);
+}
+.circle-box{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+    left: 10%;
+    bottom: 30%;
+}
+.glass-box{
+    position: absolute;
+    left: 95%;
+    top: 83%;
+}
+.second-glass{
+    height: 95px;
+    width: 190px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    left: 170%;
+    bottom: 300%;
+}
+.glass-title{
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 15%;
+    bottom: 40%;
+}
+.glass-content{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255, 0.65);
+    position: absolute;
+    left: 15%;
+    bottom: 20%;
 }
