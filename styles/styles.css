@@ -16,7 +16,9 @@
 
  .bg-color{
     background-color: rgb(0, 0, 0);
-    
+ }
+ .secondary-color{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
  }
  .display-flex{
     display: flex;
@@ -100,6 +102,7 @@
     font-size: 1rem;
     font-weight: 400;
     padding-bottom: 28px;
+    margin-left: 0px;
 }
 #join-part{
     font-size: 1rem;
@@ -199,7 +202,7 @@
 
 .habit-section{
     width: 1044px;
-    height: 445px;
+    height: 452px;
     margin-top: 100px;
 }
 .change-container{
@@ -230,72 +233,55 @@
 .change-container, h2, p{
     margin-left: 80px ;
 }
-.img-box{
-    display: flex;
+.content-container{
+    width: 1044px;
+    height: 274px;
+    margin: 58px 120px;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    gap: 50px;
-    margin-top: 90px;
-    margin-left: 200px;
+}
+.img-box{
+    width: 231px;
+    height: 274px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 .picture{
-    border: 4px solid rgb(17, 17, 17);
+    border: 5px solid rgb(17, 17, 17);
     border-radius: 50%;
 }
 .first-content{
-    display: flex;
+    width: 231px;
+    height: 65px;
+    margin: 20px 0px;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 130px;
+    align-items: center;
 }
-.movement-title{
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-bottom: 20px;
-    color: rgb(255, 255, 255);
-}
-.second-content{
-    position: relative;
+.text-title{
+    width: 231px;
+    height: 36px;
+    margin: 6px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    bottom: 75px;
-    left: -30px;
 }
-#time-title{
-    margin-bottom: 20px;
-    margin-left: 60px;
+.text-part{
+    font-size: 1.2rem;
+    font-weight: 600;
 }
-.third-content{
-    position: relative;
+.accessible-part{
     display: flex;
     flex-direction: column;
-    justify-content:flex-end;
-    align-items: flex-end;
-    bottom: 150px;
-    right: 190px;
-}
-#practice-title{
-    margin-bottom: 20px;
-    margin-right:40px ;
-}
-.final-section{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-end;
-    align-items: flex-end;
-    bottom: 245px;
-    left: 40px;
-}
-#wight-title{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    justify-content: flex-start;
+    align-items: center;
 }
 /* change your habit ends here */
+
+/* media screen for header section */
 
 @media screen and (max-width:576px){
     .banner-container{
@@ -343,51 +329,123 @@
     left: 250px;
     top: -220px;
    }
-   
+  
 }
-@media screen and (min-width: 576px) and (max-width: 992px){
+
+ /* For Tablet */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
     .banner-container{
         width: 745px;
         height: 1405px;
+        background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+        background-color: rgb(0, 0, 0);
     }
     .navbar{
-        margin-left: 60px;
+        margin-left: 40px;
+    }
+    .nav-links{
+        margin-left: 340px;
     }
     .section-container{
-        width: 599px;
-        height: 440px;
-        margin-left: 100px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .container-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        margin-left: 200px;
     }
     .img-section{
-        width: 100%;
-       top: 529px;
-       left: 65px;
+        position: absolute;
+        left: 70px;
+        top: 550px;
     }
     .glass-box{
-        left: 25px;
-        top: 830px;
-       }
-       .second-glass{
-        left: 250px;
-        top: -220px;
-       }
-       .bar-icon{
-        display: none;
-       }
-       .nav-links{
-       margin-left: 110px;
-       }
+        position: absolute;
+        left: -30px;
+        top: 850px;
+    }
+    .video-title{
+        left: -5px;
+        top: 50px;
+    }
+    .glass-title{
+        bottom: 10px;
+    }
+    .glass-content{
+        top: 60px;
+    }
+}
+/* media section for change your habit section */
+/* for mobile */
+@media screen and (max-width: 576px) {
+    .habit-section{
+        width: 570px;
+        height: 1398px;
+        margin: 58px 0px;
+    }
+    .change-container{
+        width: 319px;
+        height: 125px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .change-container, h2{
+        width: 328px;
+        height: 38px;
+        font-weight: 500;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    .content-container{
+        width: 338px;
+        height: 1216px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 110px;
+        gap: 40px;
+    }
+    .img-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-
-
-
-
+/* For Tablet */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .habit-section{
+        width: 566px;
+        height: 766px;
+    }
+    .change-container{
+        width: 476px;
+        height: 120px;
+        margin: 70px 185px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .change-container, h2{
+        width: 476px;
+        height: 58px;
+        font-weight: 900;
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    .change-container, p{
+        width: 475px;
+        height: 48px;
+    }
+    .content-container{
+        width: 566px;
+        height: 588px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding-left: 85px;
+    }
+}
