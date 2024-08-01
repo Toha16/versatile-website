@@ -281,6 +281,40 @@
 }
 /* change your habit ends here */
 
+ /* Run an extra mile easily start here  */
+
+.Run-container{
+    width: 1060px;
+    height: 370px;
+    margin: 62px 120px;
+    border-radius: 18px; 
+   padding-top: 100px;
+}
+.mile-container{
+    width: 445px;
+    height: 290px;
+}
+.run-container{
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 20px 0;
+}
+.join-btn{
+    margin-left: 80px;
+    margin-top: 15px;
+}
+.run-img{
+    position: relative;
+    width: 366px;
+    height: 312px;
+    left: 662px;
+    bottom: 290px;
+    border: 2px solid black;
+    border-radius: 18px;
+}
+
+ /* Run an extra mile easily end here  */
+
 /* media screen for header section */
 
 @media screen and (max-width:576px){
@@ -449,3 +483,4 @@
         padding-left: 85px;
     }
 }
+ 
