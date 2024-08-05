@@ -42,7 +42,7 @@
 
  .banner-container{
     width: 1440px;
-    height: 715px;
+    height: 815px;
     border: 2px solid black;
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
     background-color: rgb(0, 0, 0);
@@ -513,7 +513,6 @@
     width: 1293px;
     height: 487px;
     background: rgb(34, 34, 34);
-    right: 300px;
  }
  .chart-part{
     position: relative;
@@ -541,28 +540,33 @@
     padding: 10px 15px;
     border: 1px solid gray;
  }
- .form-container{
+ .bmi-subtitle{
     position: absolute;
-    width: 575px;
-    height: 380px;
     left: 600px;
-    bottom: 70px;
+    width: 580px;
+    height: 385px;
  }
- .Bmi-content{
-    padding-left: 80px;
-    padding-bottom: 30px;
- }
- .form-content{
-    width: 575px;
-    height: 170px;
-    margin-top: 35px;
- }
- .form-part{
+.Bmi-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    bottom: 30px;
+}
+.bmi-title{
+    position: relative;
+    right: 78px;
+    top: 15px;
+}
+ form{
     gap: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 50px), 50px 50px;
     border-radius: 8px;
+    margin-top: 16px;
  }
  input{
     color: rgba(255, 255, 255);
@@ -591,6 +595,10 @@
     border: none;
     padding-left: 10px;
  }
+ .btn-calculate{
+    margin-top: 16px;
+
+ }
  /* Form & table end here */
 
 
@@ -610,6 +618,7 @@
     }
     .bar-icon{
         position: relative;
+        display: flex;
        left: 100px;
     }
     .container-section{
@@ -1009,4 +1018,94 @@
      }
 }
 
-/* Form & table start here */
+/* Form & table start here for mobile */
+
+@media screen and (max-width: 576px) {
+    .BMI-container{
+        position: relative;
+        width: 595px;
+        height: 120px;
+        margin-top: 350px;
+        right: 350px;
+     }
+     .calculator-container{
+        position: relative;
+        width: 470px;
+        height: 800px;
+        background: rgb(34, 34, 34);
+        left: 30px;
+        bottom: 30px;
+     }
+     .chart-part{
+        position: absolute;
+        margin: 35px 50px;
+     }
+     .table-section{
+        position: absolute;
+        left: 50px;
+        top: 80px;
+        width: 310px;
+        height: 216px;
+        border-collapse: collapse;
+        margin-top: 50px;
+     }
+     form{
+        position: absolute;
+        width: 355px;
+        height: 170px;
+        right: 775px;
+        top: 545px;
+     }
+     .your-bmi{
+        position: absolute;
+        width: 150px;
+        height: 20px;
+        right: 975px;
+        top: 450px;
+        font-size: 1rem;
+        font-weight: 900;
+     }
+     .bmi-title{
+        position: absolute;
+        width: 310px;
+        height: 70px;
+        right: 815px;
+        top: 500px;
+     }
+     .form-part{
+        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50px), 50px 50px;
+        border-radius: 8px;
+        margin-top: 16px;
+     }
+     input{
+        color: rgba(255, 255, 255);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        width: 170px;
+        height: 45px;
+        border: none;
+        padding-left: 10px;
+     }
+     .sex-content{
+        color: rgba(255, 255, 255);
+        width: 182px;
+        height: 47px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+        padding-left: 10px;
+     }
+     .activity{
+        color: rgba(255, 255, 255);
+        grid-column: span 2;
+        height: 47px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+        padding-left: 10px;
+     }
+     
+}

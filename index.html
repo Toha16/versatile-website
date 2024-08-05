@@ -167,11 +167,13 @@
         <!-- Training and exercise end here -->
 
         <!-- BMI table & form start here -->
-         <section class="BMI-container ">
-            <h1 class="bmi-content primary-color">
-                BMI Calculator
-            </h1>
-            <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or <br> access to a gym.</p>
+         <section>
+            <div class="BMI-container">
+                <h1 class="bmi-content primary-color">
+                    BMI Calculator
+                </h1>
+                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or <br> access to a gym.</p>
+            </div>
             <div class="calculator-container">
                 <h3 class="chart-part">BMI Calculator Chart</h3>
                 <table class="table-section">
@@ -200,28 +202,29 @@
                         </tr>
                     </tbody>
                 </table>
-                <div class="form-container">
-                    <div class="bmi-subtitle">
-                        <h3 class="Bmi-content">Calculate your BMI</h3>
-                        <p>We believe fitness should be accessible to everyone, everywhere, regardless of <br> income or access to a gym. </p>
+                <div class="bmi-subtitle">
+                    <div class="Bmi-content">
+                        <h3 class="your-bmi">Calculate your BMI</h3>
+                        <p class="bmi-title">We believe fitness should be accessible to everyone, everywhere, regardless of <br> income or access to a gym. </p>
                     </div>
-                    <div class="form-content">
-                        <form>
-                            <div class="form-part primary-color">
-                                <input type="text" placeholder="Height/cm">
-                                <input type="text" placeholder="Weight/kg">
-                                <input type="text" placeholder="Age">
-                                <select class="sex-content">
-                                <option value="">Sex</option>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                                </select>
-                                <select class="activity">
-                                <option class="" value="">Select an activity factor</option>
-                                </select>
-                            </div>
-                        </form>
-                    </div>
+                    <form>
+                            <input type="text" placeholder="Height/cm">
+                            <input type="text" placeholder="Weight/kg">
+                            <input type="text" placeholder="Age">
+                            <select class="sex-content">
+                            <option value="">Sex</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            </select>
+                            <select class="activity">
+                            <option class="" value="">Select an activity factor</option>
+                            </select>
+                        <div class="btn-calculate">
+                            <button class="btn-primary primary-color">
+                                Calculate
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
          </section>
