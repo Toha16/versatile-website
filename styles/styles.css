@@ -1251,3 +1251,66 @@
         padding-left: 10px;
      }
 }
+
+/* Meet our team responsive for mobile start here */
+
+@media screen and (max-width: 576px) {
+    .meet-container{
+        margin-left: 0px;
+    }
+    .team-title{
+        width: 245px;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    .meet-subtitle{
+        width: 300px;
+        height: 70px;
+    }
+    .pictures-container{
+        position: relative;
+        right: 90px;
+        width: 500px;
+        height: 1950px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .meet-img, .one-content{
+        width: 435px;
+        height: 300px;
+    }
+    .trainer-part{
+        position: absolute;
+        left: -60px;
+    }
+}
+
+/* For tablet */
+
+@media screen and (Min-width: 576px) and (max-width: 992px) {
+    .meet-container{
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .meet-subtitle{
+        width: 670px;
+    }
+    .pictures-container{
+        position: relative;
+        right: 82px;
+        width: 907px;
+        height: 645px;
+    }
+    .meet-img, .one-content{
+        width: 280px;
+        height: 300px;
+    }
+    .trainer-part{
+        position: absolute;
+        left: -60px;
+    }
+}
