@@ -658,13 +658,19 @@
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .banner-container{
-        width: 745px;
+        width: 955px;
         height: 1405px;
         background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
         background-color: rgb(0, 0, 0);
     }
     .navbar{
-        margin-left: 40px;
+        margin-left: 0px;
+    }
+    .fitness-section{
+        padding-left: 10px;
+    }
+    .bar-icon{
+        display: flex;
     }
     .nav-links{
         margin-left: 340px;
@@ -775,21 +781,23 @@
 
 @media screen and (max-width:576px){
     .Run-container{
-        width: 350px;
-        height: 530px;
+        position: relative;
+        right: 100px;
+        width: 505px;
+        height: 520px;
         border-radius: 18px;
         background: rgb(34, 34, 34);
     }
     .extra-content{
         position: relative;
-        width:75%;
+        width:115%;
         height: 100%;
-       margin-bottom: 60px;
-       display: flex;
-       flex-direction: column;
-       justify-content: flex-start;
-       align-items: flex-start;
-       bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        bottom: 110px;
+        left: 10px;
     }
     .run-title{
         position: relative;
@@ -807,24 +815,26 @@
         width: 80%;
     }
     .run-img{
-        width: 285px;
-        height: 170px;
+        width: 410px;
+        height: 270px;
         position: relative;
-        left: 33px;
-        bottom: 50px;
+        left: 50px;
+        bottom: 80px;
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .Run-container{
-        width: 684px;
-        height: 400px;
+        position: relative;
+        right: 90px;
+        width: 890px;
+        height: 380px;
         border-radius: 18px;
         background: rgb(34, 34, 34);
     }
     .extra-content{
         position: relative;
-        width: 263px;
+        width: 80%;
         height: 308px;
         left: 60px;
         bottom: 30px;
@@ -841,29 +851,35 @@
     }
     .run-container{
         position: relative;
-        width: 263px;
-        height: 120px;
+        width: 200px;
+        height: 180px;
         left: -80px;
-        bottom: 30px;
+        bottom: 10px;
     }
     .join-btn{
         position: relative;
         width: 70%;
         margin-left: 0px;
-        bottom: 40px;
+        bottom: 0px;
     }
     .run-img{
-        width: 256px;
-        height: 320px;
+        width: 340px;
+        height: 360px;
         position: relative;
-        left: 385px;
-        bottom: 320px;
+        left: 460px;
+        bottom: 350px;
     }
 }
 
 /* training and exercise start here */
 @media screen and (max-width: 576px) {
+    .Training-container{
+        position: relative;
+        right: 35px;
+    }
     .exercise-container{
+        position: relative;
+        right: 60px;
         width: 350px;
         height: 160px;
     }
@@ -875,20 +891,16 @@
     }
     .six-img-container{
         position: relative;
-        width: 450px;
-        height: 650px;
+        width: 500px;
+        height: 700px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         right: 50px;
     }
-    
-    .background-container{
-        position: relative;
-     }
      .exercise-img,.training-img,.third-img,.fourth-img,.fifth-img,.sixth-img{
-        width: 225px;
-        height: 215px;
+        width: 250px;
+        height: 230px;
      }
      .overlay{
         position: absolute;
@@ -983,15 +995,21 @@
         left: -40px;
      }
      .overlay,.second-container, .third-container, .fourth-container, .fifth-container,.sixth-container{
-        width: 225px;
-        height: 215px;
+        width: 250px;
+        height: 230px;
      }
 }
 
 /* For tablet */
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
+    .Training-container{
+        position: relative;
+        right: 70px;
+    }
     .exercise-container{
+        position: relative;
+        right: 15px;
         width: 670px;
         height: 120px;
     }
@@ -1002,19 +1020,19 @@
         font-weight: 900;
     }
     .six-img-container{
-        width: 735px;
+        width: 910px;
         height: 500px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
     .exercise-img,.training-img,.third-img,.fourth-img,.fifth-img,.sixth-img{
-        width: 245px;
-        height: 245px;
+        width: 288px;
+        height: 255px;
      }
      .overlay,.second-container, .third-container, .fourth-container, .fifth-container,.sixth-container{
-        width: 245px;
-        height: 245px;
+        width: 288px;
+        height: 255px;
      }
 }
 
@@ -1030,20 +1048,20 @@
      }
      .calculator-container{
         position: relative;
-        width: 470px;
+        width: 495px;
         height: 800px;
         background: rgb(34, 34, 34);
         left: 30px;
-        bottom: 30px;
+        bottom: 50px;
      }
      .chart-part{
         position: absolute;
-        margin: 35px 50px;
+        margin: 10px 50px;
      }
      .table-section{
         position: absolute;
         left: 50px;
-        top: 80px;
+        top: 70px;
         width: 310px;
         height: 216px;
         border-collapse: collapse;
@@ -1054,14 +1072,14 @@
         width: 355px;
         height: 170px;
         right: 775px;
-        top: 545px;
+        top: 530px;
      }
      .your-bmi{
         position: absolute;
         width: 150px;
         height: 20px;
         right: 975px;
-        top: 450px;
+        top: 430px;
         font-size: 1rem;
         font-weight: 900;
      }
@@ -1070,7 +1088,7 @@
         width: 310px;
         height: 70px;
         right: 815px;
-        top: 500px;
+        top: 490px;
      }
      .form-part{
         gap: 10px;
@@ -1084,14 +1102,14 @@
         color: rgba(255, 255, 255);
         border-radius: 8px;
         background: rgba(255, 255, 255, 0.1);
-        width: 170px;
+        width: 190px;
         height: 45px;
         border: none;
         padding-left: 10px;
      }
      .sex-content{
         color: rgba(255, 255, 255);
-        width: 182px;
+        width: 202px;
         height: 47px;
         border-radius: 8px;
         background: rgba(255, 255, 255, 0.1);
@@ -1108,4 +1126,75 @@
         padding-left: 10px;
      }
      
+}
+
+/* For tablet */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .BMI-container{
+        position: relative;
+        width: 595px;
+        height: 120px;
+        right: 340px;
+    }
+    .calculator-container{
+        position: relative;
+        width: 890px;
+        height: 855px;
+        background: rgb(34, 34, 34);
+        left: 45px;
+    }
+    .chart-part{
+        position: absolute;
+        margin: 15px 50px;
+     }
+     .table-section{
+        position: absolute;
+        left: 50px;
+        top: 80px;
+        width: 430px;
+        height: 216px;
+        border-collapse: collapse;
+        margin-top: 60px;
+     }
+     .Bmi-content{
+        position: relative;
+        width: 685px;
+        height: 95px;
+        right: 550px;
+        top: 470px;
+     }
+    form{
+        position: relative;
+        right: 550px;
+        top: 490px;
+        width: 765px;
+        height: 170px;
+    }
+     input{
+        color: rgba(255, 255, 255);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        width: 363px;
+        height: 45px;
+        border: none;
+        padding-left: 10px;
+     }
+     .sex-content{
+        color: rgba(255, 255, 255);
+        width: 376px;
+        height: 47px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+        padding-left: 10px;
+     }
+     .activity{
+        color: rgba(255, 255, 255);
+        grid-column: span 2;
+        height: 47px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+        padding-left: 10px;
+     }
 }
