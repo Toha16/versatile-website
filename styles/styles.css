@@ -510,7 +510,7 @@
  }
  .calculator-container{
     position: relative;
-    width: 1293px;
+    width: 1310px;
     height: 487px;
     background: rgb(34, 34, 34);
  }
@@ -601,6 +601,59 @@
  }
  /* Form & table end here */
 
+ /* Meet our team start here */
+
+ .meet-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px;
+ }
+.pictures-container{
+    width: 1060px;
+    height: 605px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0px 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+.meet-img{
+    margin: 10px;
+    width: 330px;
+    height: 280px;
+    border-radius: 18px;
+    padding: 0px;
+}
+.Meet-picture{
+    position: relative;
+}
+.one-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+    width: 330px;
+    height: 280px;
+    margin-bottom: 14px;
+    margin-left: 10px;
+    border-radius: 18px;
+ }
+ .meet-title{
+    position: absolute;
+    left: 20px;
+    top: 200px;
+ }
+ .trainer-part{
+    position: absolute;
+    right: 270px;
+    top: 220px;
+ }  
+
+ /* Meet our team end here */
 
 /* media screen for header section */
 
